@@ -46,6 +46,11 @@ function gameObject() {
     return someObject
 }
 
+function numPointsScored(playerName) {
+    const obj = gameObject();
+    const allPlayers = {...obj.home.players, ...obj.away.players}
+    console.log(allPlayers)
+}
 
 
 
