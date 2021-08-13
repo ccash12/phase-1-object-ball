@@ -48,10 +48,13 @@ function gameObject() {
 
 function numPointsScored(playerName) {
     const obj = gameObject();
-    const allPlayers = {...obj.home.players, ...obj.away.players}
-    console.log(allPlayers)
+    const allPlayers = {...obj.home.players, ...obj.away.players};
+    for (const player in allPlayers) {
+        let playerPoints = player["points"];
+        console.log(playerPoints)
+    }
+ 
 }
-
 
 
 
